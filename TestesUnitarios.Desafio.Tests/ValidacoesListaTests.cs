@@ -1,9 +1,10 @@
+using Xunit;
+using System.Collections.Generic;
 using TestesUnitarios.Desafio.Console.Services;
 
-namespace TestesUnitarios.Desafio.Tests;
+namespace TestesUnitarios.Desafio.Tests{
 
-public class ValidacoesListaTests 
-{
+public class ValidacoesListaTests {
     private ValidacoesLista _validacoes = new ValidacoesLista();
 
     [Fact]
@@ -47,9 +48,10 @@ public class ValidacoesListaTests
          var resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
 
         // Assert
-        Assert.True(resultado);
+        Assert.False(resultado);
     }
 
+    [Fact]
     //TODO: Corrigir a anotação [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
@@ -96,4 +98,5 @@ public class ValidacoesListaTests
         //TODO: Corrigir o Assert.Equal com base no retorno da chamada ao método
         Assert.Equal(-8, resultado);
     }
+  }
 }
