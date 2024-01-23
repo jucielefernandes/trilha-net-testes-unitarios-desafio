@@ -2,6 +2,9 @@ namespace TestesUnitarios.Desafio.Console.Services
 {
     public class ValidacoesString
     {
+       
+
+        
         public int RetornarQuantidadeCaracteres(string texto)
         {
             var numeroCaracteres = texto.Length;
@@ -19,5 +22,6 @@ namespace TestesUnitarios.Desafio.Console.Services
             var termina = texto.EndsWith(textoProcurado);
             return termina;
         }
+        
     }
 }
